@@ -19,25 +19,60 @@ class PantallaUno extends StatelessWidget {
           backgroundColor: Colors.indigo,
           centerTitle: true,
         ),
-        body: Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/pantalla2');
-                },
-                child: const Text('Ir a Pantalla 2'),
+        body: Column(
+          children: [
+            SizedBox(
+              height: 30,
+            ),
+            Center(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/pantalla2');
+                    },
+                    child: const Text('Ir a Pantalla 2'),
+                  ),
+                  const SizedBox(height: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/pantalla3');
+                    },
+                    child: const Text('Ir a Pantalla 3'),
+                  ),
+                  const SizedBox(height: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/pantalla4');
+                    },
+                    child: const Text('Ir a Pantalla 4'),
+                  ),
+                  const SizedBox(height: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/pantalla5');
+                    },
+                    child: const Text('Ir a Pantalla 5'),
+                  ),
+                  const SizedBox(height: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/pantalla6');
+                    },
+                    child: const Text('Ir a Pantalla 6'),
+                  ),
+                  const SizedBox(height: 30),
+                  ElevatedButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('/pantalla7');
+                    },
+                    child: const Text('Ir a Pantalla 7'),
+                  ),
+                ],
               ),
-              const SizedBox(height: 20),
-              ElevatedButton(
-                onPressed: () {
-                  Navigator.of(context).pushNamed('/pantalla3');
-                },
-                child: const Text('Ir a Pantalla 3'),
-              ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );
